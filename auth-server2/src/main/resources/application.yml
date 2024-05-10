@@ -1,0 +1,19 @@
+#oauth2:
+#  client:
+#    id: "oauth-client"
+#    secret: "oauth-secret"
+#    token:
+#      access-token-lifetime: 60  # In minutes
+#      refresh-token-lifetime: 30  # In days
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080
+      client:
+        id: "oauth-client"
+        secret: "oauth-secret"
+        token:
+          access-token-lifetime: 60  # In minutes
+          refresh-token-lifetime: 30  # In days
